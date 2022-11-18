@@ -1,0 +1,8 @@
+.box-component{
+    width:10rem;
+    height:10rem;
+    border:0.3rem solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
