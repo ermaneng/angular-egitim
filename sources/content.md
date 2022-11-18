@@ -33,15 +33,32 @@
     1. adding input element / import forms module  
     1. assign ngModel  
     1. assign variable  
-    1. implicit any  
 1. New component
     1. what are components  
-    1. ng generate component  ng g c
+    1. ng generate component / ng g c
     1. @Component decorator  
         1. selector
         1. template / templateUrl
         1. style / styleUrl
     1. css styling
+    1. @Input()
+    1. child component
+1. Todo List  
+    1. what are modules  
+    1. ng generate module / ng g m  
+    1. import modules in module.ts  
+    1. export components in module.ts  
+    1. ng g c list-item  
+    1. declarations in module.ts   
+    1. items array / list interface  
+    1. list items ngFor  
+    1. list item visibility ngIf  
+    1. click on complete button
+    1. disable due to statement
+    1. @Output() Event Emitter
+    1. 
+
+
 
 
 
