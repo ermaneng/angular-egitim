@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BoxComponent } from './box/box.component';
+import { TodoListModule } from './todo-list/todo-list.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { BoxComponent } from './box/box.component';
   imports: [
     CommonModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    TodoListModule
+
 
   ],
   providers: [],

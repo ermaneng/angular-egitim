@@ -1,0 +1,4 @@
+<div class="todo-list">
+    <app-todo-list-item *ngFor="let item of items" [data]="item" (complete)="onItemComplete($event)"></app-todo-list-item>
+</div>
+
