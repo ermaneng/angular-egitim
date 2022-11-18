@@ -26,4 +26,19 @@
         1. style / styleUrl
     1. export class
     1. global variable
-    1. variable interpolation
+    1. variable interpolation  
+1. Running Application  
+    1. ng start / npm start
+    1. browser hot reload
+    1. browser f12 / inspect element / element tag names
+    1. console errors / debugging  
+1. Two way binding  
+    1. adding input element / import forms module
+    1. assign ngModel
+    1. assign variable
+    1. implicit any
+
+
+
+
+    
