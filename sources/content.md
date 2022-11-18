@@ -20,23 +20,29 @@
     1. app.component
     1. html / css / ts
     1. import {Component}
-    1. @Component decorator  
-        1. selector
-        1. template / templateUrl
-        1. style / styleUrl
     1. export class
     1. global variable
     1. variable interpolation  
 1. Running Application  
+    1. terminal usage  
     1. ng start / npm start
     1. browser hot reload
     1. browser f12 / inspect element / element tag names
     1. console errors / debugging  
 1. Two way binding  
-    1. adding input element / import forms module
-    1. assign ngModel
-    1. assign variable
-    1. implicit any
+    1. adding input element / import forms module  
+    1. assign ngModel  
+    1. assign variable  
+    1. implicit any  
+1. New component
+    1. what are components  
+    1. ng generate component  ng g c
+    1. @Component decorator  
+        1. selector
+        1. template / templateUrl
+        1. style / styleUrl
+    1. css styling
+
 
 
 
