@@ -55,8 +55,12 @@
     1. list item visibility ngIf  
     1. click on complete button
     1. disable due to statement
-    1. @Output() Event Emitter
-    1. 
+    1. @Output() Event Emitter  
+1. Todo List From Api 
+    1. OnInit() 
+    2. Constructor()  
+    3. http injection  
+    
 
 
 

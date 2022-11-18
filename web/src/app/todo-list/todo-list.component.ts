@@ -1,32 +1,30 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TodoListItemInterface } from './todo-list-item/todo-list-item.interface';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.css']
 })
-export class TodoListComponent {
-  @Input() items: TodoListItemInterface[] = [
-    {
-      userId: 1,
-      id: 1,
-      title: 'Todo List Item 1',
-      completed: false
-    },
-    {
-      userId: 1,
-      id: 2,
-      title: 'Todo List Item 2',
-      completed: false
-    },
-    {
-      userId: 1,
-      id: 3,
-      title: 'Todo List Item 3',
-      completed: false
-    }
-  ];
+export class TodoListComponent implements OnInit {
+
+  constructor(private http: HttpClient) { }
+  
+  @Input() items: TodoListItemInterface[] = [];
+
+  ngOnInit(){
+    //fetch('https://jsonplaceholder.typicode.com/error/501') //error test
+    fetch('https://jsonplaceholder.typicode.com/todos')
+      .then((response) => response.json())
+      .then((json:TodoListItemInterface[]) => {
+        console.log(json);
+        this.items = json.slice(0,10)
+      })
+      .catch(function(error:any){
+        console.log('Request failed-->',error)
+      })
+  }
 
   onItemComplete(id:number){
     //complete item
